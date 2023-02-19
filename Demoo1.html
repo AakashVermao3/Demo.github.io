@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+
+<body style="text-align:center;" id="body">
+    <h1>Enter Your Name</h1>
+
+<input id="name"
+       type="text">
+<button type="button"
+        onclick="EnterName()">Submit</button>
+<p style="color:green"
+   id="demo"></p>
+
+
+<script>
+    function EnterName()
+    {
+        var x= document.getElementById("name").value;
+
+        document.getElementById("demo").innerHTML =
+            "Welcome to Java Dynamic Programing   "+ x ;
+    }
+</script>
+</body>
+
+</body>
+</html>
